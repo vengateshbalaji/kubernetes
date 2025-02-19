@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-github
 spec:
   replicas: 1
   selector:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:1.16
         ports:
         - containerPort: 80
         resources:
