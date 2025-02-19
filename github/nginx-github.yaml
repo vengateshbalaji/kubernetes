@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: azurecr123.azurecr.io/docker:3
+        image: azurecr123.azurecr.io/docker:2
         ports:
         - containerPort: 80
         resources:
